@@ -1,0 +1,23 @@
+<div class="header">
+    <a href="#introduction" (click)="resetSelect(); closeImprint()">Firat</a>
+    <div>
+        <div>
+            <a href="#about-me-section" (click)="select('aboutMe'); closeImprint()">About me</a>
+            <div [class.border-red]="aboutMe"></div>
+        </div>
+        <div>
+            <a href="#skills-section" (click)="select('skills'); closeImprint()">Skills</a>
+            <div [class.border-red]="skills"></div>
+        </div>        <div>
+            <a href="#portfolio-section" (click)="select('portfolio'); closeImprint()">Portfolio</a>
+            <div [class.border-red]="portfolio"></div>
+        </div>
+        <mat-icon (click)="mobileMenu()">{{icon}}</mat-icon>
+    </div>
+</div>
+<div class="mobile-menu" [class.d-none]="menu" id="mobile-menu">
+    <a (click)="closeMenu(); closeImprint()" href="#about-me-section">About me</a>
+    <a (click)="closeMenu(); closeImprint()" href="#skills-section">Skills</a>
+    <a (click)="closeMenu(); closeImprint()" href="#portfolio-section">Portfolio</a>
+    <a (click)="closeMenu(); closeImprint()" href="#contact-section">Contact</a>
+</div>

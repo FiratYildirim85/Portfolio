@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('assets/fonts/poppins.scss');
+
+html, body { 
+    font-size: 1.5rem;
+    height: 100%; 
+    scroll-behavior: smooth;
+}
+body { 
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #141D2F;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: clamp(0.8rem, 0.7466rem + 0.2671vw, 1.2rem);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 3.5rem
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+ 
+p {
+    font-size: 1.5rem;
+}

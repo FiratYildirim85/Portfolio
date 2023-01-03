@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portfolio-fba6d": {
+      "hosting": {
+        "Portfolio": [
+          "portfolio-fba6d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portfolio-fba6d"
+  }
+}
