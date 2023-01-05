@@ -7,11 +7,12 @@
     height: 80%;
     padding: 5% 10% 0 10%;
 
+   
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         width: 50%;
         z-index: 1;
         padding-right: 5%;
@@ -67,7 +68,6 @@
     }
 
     img {
-        margin-top: 5%;
         width: 40%;
         height: 90%;
         object-fit: contain;
@@ -103,6 +103,7 @@
         } 
 
         img {
+            width: 40px;
             height: 90%;
             cursor: pointer;
             transition: transform 125ms ease-in-out;
@@ -140,16 +141,98 @@ span {
     }
 }
 
+@media (max-width: 5000px) {
+    .introduction {
+        height: 95%;
+        img {
+            width: 45%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width: 4000px) {
+    .introduction {
+        height: 85%;
+        img {
+            width: 45%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width: 3000px) {
+    .introduction {
+        height: 70%;
+        img {
+            width: 45%;
+            margin-top: 2%;
+        }
+    }
+}
+
+
+@media (max-width: 2150px) {
+    .introduction {
+        height: 75%;
+        img {
+            width: 45%;
+            margin-top: 0%;
+        }
+    }
+}
+
+@media (max-width: 1750px){
+    .introduction {
+        height: 65%;
+        img {
+            width: 45%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width: 1390px) {
+    .introduction {
+        height: 65%;
+        img {
+            width: 45%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width: 1390px){
+    .introduction {
+        height: 65%;
+        img {
+            width: 45%;
+            margin-top: 0%;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .introduction {
+        height: 65%;
+        img {
+            width: 45%;
+            margin-top: 0%;
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .introduction {
         flex-direction: column;
-        margin-bottom: 10%;
-        padding-top: 8%;
+        margin-bottom: 15%;
+        padding-top: 30%;
         height: auto;
-
+    
         img {
-            width: 70%;
-            height: auto;
+            margin-top: 5%;
+            width: 90%;
+           
         }
 
         div {
@@ -183,7 +266,7 @@ span {
         img {
             width: 85%;
             object-fit: cover;
-            margin-top: 10%;
+            margin-top: 25%;
         }
     }
 }
@@ -217,14 +300,14 @@ span {
     .introduction {
         img {
             width: 100%;
-            margin-top: 20%;
+            margin-top: 35%;
         }
     }
 }
 
 @media (max-width: 450px) {
     .introduction {
-        gap: 5vh;
+        gap: 2vh;
         div {
 
             div {
@@ -244,7 +327,7 @@ span {
         }
 
         img {
-            margin-top: 30%;
+            margin-top: -5%;
         }
     }
 }
@@ -252,7 +335,14 @@ span {
 @media (max-width: 370px) {
     .introduction {
         img {
-            margin-top: 50%;
+            margin-top: -5%;
+        }
+    }
+}
+@media (max-width: 300px) {
+    .introduction {
+        img {
+            margin-top: -5%;
         }
     }
 }
