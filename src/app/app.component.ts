@@ -1,5 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 
+
 @Injectable()
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   closeImprint() {
@@ -20,4 +22,6 @@ export class AppComponent implements OnInit {
   openImprint() {
     this.imprint = true;
   }
+
+  
 }
