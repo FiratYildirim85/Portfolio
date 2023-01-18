@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormControl } from "@angular/forms";
-import AOS from 'aos';
+
 
 @Component({
   selector: 'app-contact',
@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
+
   }
 
   changeText(field: string) {
