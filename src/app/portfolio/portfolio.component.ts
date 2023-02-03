@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos/dist/aos.js';
+
 
 
 
@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init();
+
   }
 
 }

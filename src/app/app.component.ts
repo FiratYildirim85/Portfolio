@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-
+import * as AOS from 'aos';
 
 @Injectable()
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+        AOS.init();
   }
 
   closeImprint() {
