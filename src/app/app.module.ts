@@ -19,6 +19,8 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ImprintComponent } from './imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { FormsModule } from '@angular/forms';
     PortfolioComponent,
     ContactComponent,
     ImprintComponent,
+    ContactFormComponent,
+ 
   ],
   imports: [
     BrowserModule,

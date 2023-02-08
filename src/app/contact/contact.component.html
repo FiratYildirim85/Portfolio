@@ -7,50 +7,11 @@
             projects with my work.<br><br>
             Need a Frontend developer? <b>Contact me!</b></p>
     </div>
-    <form  
-    #form action="https://firat-yildirim.de/assets/libs/send_mail/send_mail.php" method="POST">
-        <div>
-            <input name="name" #inputFullname type="text" placeholder="Your name" 
-                (focus)="colorRed('name')"
-                (blur)="colorGreen('name')"
-                [class.border-green]="nameGreen"
-                [(ngModel)]="nameValue"
-                required>
-            <mat-icon #nameIcon
-                [class.color-red]="nameRed" 
-                [class.color-green]="nameGreen"
-                >{{iconName}}
-            </mat-icon>
-        </div>
-        <div>
-            <input name="email" #inputEmail type="email" placeholder="Your email" 
-                (focus)="colorRed('email')"
-                (blur)="colorGreen('email')"
-                [class.border-green]="emailGreen"
-                [(ngModel)]="emailValue"
-                required>
-            <mat-icon #emailIcon
-                [class.color-red]="emailRed" 
-                [class.color-green]="emailGreen"
-                >{{iconEmail}}
-            </mat-icon>
-        </div>
-        <div>
-            <textarea name="message" id="inputMessage" cols="30" rows="10" placeholder="Your message" 
-                (focus)="colorRed('message')"
-                (blur)="colorGreen('message')"
-                (change)="changeText('message')"
-                [class.border-green]="messageGreen"
-                [(ngModel)]="messageValue"
-                required
-            ></textarea>
-            <mat-icon class="text" #messageIcon 
-                [class.color-red]="messageRed" 
-                [class.color-green]="messageGreen"
-                >{{iconMessage}}
-            </mat-icon>
-        </div>
-        <button (click)="form.submit()" type="submit">Send message :)</button>
-    </form>
-    <a href="#introduction"><mat-icon>arrow_circle_up</mat-icon></a>
+    <div class="contact-form">
+        <app-contact-form></app-contact-form>
+    </div>
+
+
+    
+    
 </div>

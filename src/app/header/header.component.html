@@ -3,14 +3,14 @@
     <div>
         <div>
             <a href="#about-me-section" (click)="select('aboutMe'); closeImprint()">About me</a>
-            <div [class.border-red]="aboutMe"></div>
+            
         </div>
         <div>
             <a href="#skills-section" (click)="select('skills'); closeImprint()">Skills</a>
-            <div [class.border-red]="skills"></div>
+            
         </div>        <div>
             <a href="#portfolio-section" (click)="select('portfolio'); closeImprint()">Portfolio</a>
-            <div [class.border-red]="portfolio"></div>
+           
         </div>
         <mat-icon (click)="mobileMenu()">{{icon}}</mat-icon>
     </div>

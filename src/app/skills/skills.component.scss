@@ -54,6 +54,8 @@
 
     }
 
+    
+
     div {
         width: 55%;
 
@@ -63,10 +65,10 @@
             
 
             &:hover {
-                animation: mymove 250ms infinite;
+                animation: mymove 0.5s infinite alternate;
                 filter: brightness(70%);
 
-                cursor: pointer;
+               
 
                 @keyframes mymove {
                     from {
@@ -79,6 +81,15 @@
                 }
             }
         }
+    }
+}
+
+.skills-img {
+    img{
+        height: 120px !important;
+        width: 100px !important;
+        ;
+
     }
 }
 

@@ -1,0 +1,52 @@
+<form (ngSubmit)="sendMail()" ngNativeValidate #myForm>
+    <div>
+        <img *ngIf="inputNameInvalid && inputNameInvalid !== undefined" src="assets/img/error-input.svg">
+        <img *ngIf="!inputNameInvalid && inputNameInvalid !== undefined" src="assets/img/valid-input.svg">
+        <input #nameField #inputRefName (blur)="onBlur(inputRefName)" (focus)="onFocus(inputRefName)"
+            class="style-input-and-textarea" type="text" name="name" id="name-field" required>
+        <label [ngClass]="{'label-input-on-top': firstInteractionNameLabel}" id="name-label" class="label-input"
+            translate>Your
+            name</label>
+    </div>
+
+    <span [ngClass]="{'hidde-error-message': errorName}" class="error-message" translate>Your
+        name is
+        required</span>
+
+    <div>
+        <img *ngIf="inputEmailInvalid && inputEmailInvalid !== undefined" src="assets/img/error-input.svg">
+        <img *ngIf="!inputEmailInvalid && inputEmailInvalid !== undefined" src="assets/img/valid-input.svg">
+        <input #emailField #inputRefEmail (blur)="onBlur(inputRefEmail)" (focus)="onFocus(inputRefEmail)"
+            class="style-input-and-textarea" type="text" name="email" id="email-field" required>
+        <label [ngClass]="{'label-input-on-top': firstInteractionEmailLabel}"  id="email-label" class="label-input"
+            translate>Your
+            email</label>
+    </div>
+
+    <span [ngClass]="{'hidde-error-message': errorEmail}" class="error-message" translate>Your email is
+        required</span>
+
+    <div>
+        <img *ngIf="inputMessageInvalid && inputMessageInvalid !== undefined" src="assets/img/error-input.svg">
+        <img *ngIf="!inputMessageInvalid && inputMessageInvalid !== undefined" src="assets/img/valid-input.svg">
+        <textarea #messageField #textareaRefMessage (blur)="onBlur(textareaRefMessage)"
+            (focus)="onFocus(textareaRefMessage)" class="style-input-and-textarea" name="message" id="" cols="30"
+            rows="10" id="message-field" required></textarea>
+        <label [ngClass]="{'label-textarea-on-top': firstInteractionMessageLabel}" id="message-label"
+            class="label-textarea" translate>Your
+            message</label>
+    </div>
+
+    <span [ngClass]="{'hidde-error-message': errorMessage}" class="error-message" translate>Your message
+        is empty</span>
+
+    <button #sendButton translate>Send message ;)</button>
+</form>
+
+<div [ngClass]="{'hide-overlay': hideOverlay}" class="overlay-email-was-sent">
+    <div class="white-bg-container">
+        <img src="assets/img/valid-input.svg" alt="green-checkmark">
+        <span translate>Email sent successfully</span>
+        <button (click)="removeOverlay()">OK</button>
+    </div>
+</div>
